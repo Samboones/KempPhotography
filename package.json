@@ -1,0 +1,25 @@
+{
+  "name": "kempphotography",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "client:dev": "npm run dev --workspace=client",
+    "server:dev": "npm run dev --workspace=server",
+    "dev": "concurrently -- kill-others-on-fail \"npm run server:dev\" \"npm run client:dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "mongodb": "^6.7.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

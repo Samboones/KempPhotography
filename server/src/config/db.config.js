@@ -1,0 +1,1 @@
+export const DB_URL = process.env.DB_URL || "mongodb+srv://samboones:Khaylee16@cluster0.ue7eko4.mongodb.net/KempPhotography?retryWrites=true&w=majority"
